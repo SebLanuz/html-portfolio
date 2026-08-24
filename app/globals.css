@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1b1b1d;
+  color: #ffffff;
+}
+
+/* Small helper for the pill-shaped nav underline on the active link */
+.nav-link {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.nav-link[data-active="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: #00c7fe;
+  border-radius: 2px;
+}
